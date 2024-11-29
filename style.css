@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: DINnext, matterhorn, helvetica, sans-serif;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+body {
+  background-color: black;
+}
+
+header {
+  height: 150px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: solid 1px rgb(173, 169, 169);
+}
+
+#menu {
+  display: none;
+}
+
+#logo {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+#logo2 {
+  display: none;
+}
+
+header > nav {
+  display: flex;
+}
+
+#cabecera {
+  display: flex;
+}
+
+#cabecera li {
+  padding: 0px 30px;
+  list-style: none;
+}
+
+#cabecera a {
+  color: rgb(173, 169, 169);
+  font-size: 15px; 
+}
+
+@media (max-width: 1110px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #logo {
+    display: none;
+  }
+  #logo2 {
+    display: flex;
+    width: 275px;
+    margin: auto;
+  }
+  #menu {
+    display: flex;
+    width: 36px;
+  }
+  header > nav {
+    display: none;
+  }
+}
+
+main {
+  margin: 0px 30px;
+}
+
+#estreno {    
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#estreno > span {
+  color: rgb(255, 255, 255);
+  font-size: 12px;   
+}
+#item1{
+  margin: auto;
+  max-width: 1400px;
+  
+}
+#divPrincipal {
+  position: relative;  
+  width: 100%;
+  height: auto;
+  
+  border: solid 2px red;
+  
+  
+  
+}
+
+
+#divBack {
+  width: 100%;
+  position: absolute;
+  border: solid 1px white;
+  
+}
+
+#divBack > img {
+  width: 100%;
+}
+
+#front{
+  border: solid 3px blue;
+  position: absolute;
+  top: 15%;
+  left: 30px;
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  
+}
+
+#front img {
+  border: solid 1px white;
+  width: 100%;
+  height: auto; 
+  padding: 20px; 
+}
+
+#front p {
+
+  border: solid 1px white;
+  margin: 0px;
+  padding: 20px;
+}
+
+#botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.button1 {
+  border: solid 1px rgb(255, 217, 0);
+  background-color: rgb(255, 217, 0);
+  border-radius: 60px;
+  width:175px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.button1 > a {
+  color: black;
+}
+.button2 {
+  border: solid 1px rgb(255, 217, 0);
+  background-color: rgb(0, 0, 0);
+  border-radius: 60px;
+  width:175px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* /* #divFront {
+  top: 320px;
+  position: absolute;
+  border: solid 3px red;
+  margin: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  
+} */
+/* 
+#divFront > img{
+  
+} */ 
+
+
+
+
