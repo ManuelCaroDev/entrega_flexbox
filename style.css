@@ -9,16 +9,25 @@
 }
 
 body {
-  background-color: black;
+  /* background-color: black; */
+  width: 100%;
+  background-image: url(./assets/images/background-stars-desktop_v2_96b6d74a.jpeg);
+  object-fit: cover;
+  background-position: center;
 }
 
 header {
+  background-color: black;
   height: 150px;
   padding: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
   border-bottom: solid 1px rgb(173, 169, 169);
+}
+
+h1 {
+  display: none;
 }
 
 #menu {
@@ -76,7 +85,7 @@ header > nav {
 }
 
 main {
-  margin: 0px 30px;
+  margin: 0px 0px;
 }
 
 #estreno {
@@ -91,9 +100,10 @@ main {
 }
 #item1 {
   margin: auto;
-  max-width: 1400px;
+  max-width: 1600px;
 }
 #divPrincipal {
+  
   position: relative;
   width: 100%;
   height: auto;
@@ -152,6 +162,7 @@ main {
 .button1 > a {
   color: black;
 }
+
 .button2 {
   border: solid 1px rgb(255, 217, 0);
   background-color: rgb(0, 0, 0);
@@ -162,19 +173,33 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 #front2 {
   display: none;
 }
 
 @media (max-width: 1160px) {
-  .button1 {
-    display: none;
+  h1 {
+    display: block;
   }
-  .button2 {
+  #front {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    left: 0px;
+  }
+  #front img {
     display: none;
   }
 }
 
+
+/* 
 @media (max-width: 690px) {
   .button1 {
     display: none;
@@ -184,11 +209,11 @@ main {
   }
   #p_description {
     display: none;
-  }
-  #front2 {
+  } */
+  /*#front2 {
     display: flex;
     flex-direction: column;
-  }
+  } */
 }
 
 /* /* #divFront {
